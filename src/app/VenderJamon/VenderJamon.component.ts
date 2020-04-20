@@ -103,9 +103,9 @@ export class VenderJamonComponent implements OnInit {
   addTransaction(form: any): Promise<any> {
     this.Transaction = {
       $class: 'org.jamon.VenderJamon',
-      'jamon': this.jamon.value,
-      'ganadero': this.ganadero.value,
-      'propietarioRestaurante': this.propietarioRestaurante.value,
+      'jamon': 'resource:org.jamon.Jamon#' + this.jamon.value,
+      'ganadero': 'resource:org.jamon.Ganadero#' + this.ganadero.value,
+      'propietarioRestaurante': 'resource:org.jamon.PropietarioRestaurante#' + this.propietarioRestaurante.value,
       'transactionId': this.transactionId.value,
       'timestamp': this.timestamp.value
     };
@@ -142,9 +142,9 @@ export class VenderJamonComponent implements OnInit {
   updateTransaction(form: any): Promise<any> {
     this.Transaction = {
       $class: 'org.jamon.VenderJamon',
-      'jamon': this.jamon.value,
-      'ganadero': this.ganadero.value,
-      'propietarioRestaurante': this.propietarioRestaurante.value,
+      'jamon': 'resource:org.jamon.Jamon#' + this.jamon.value,
+      'ganadero': 'resource:org.jamon.Ganadero#' + this.ganadero.value,
+      'propietarioRestaurante': 'resource:org.jamon.PropietarioRestaurante#' + this.propietarioRestaurante.value,
       'timestamp': this.timestamp.value
     };
 

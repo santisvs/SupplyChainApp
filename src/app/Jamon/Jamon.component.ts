@@ -115,7 +115,7 @@ export class JamonComponent implements OnInit {
       'peso': this.peso.value,
       'estatus_brida': this.estatus_brida.value,
       'tiempoCuracion': this.tiempoCuracion.value,
-      'propietario': this.propietario.value
+      'propietario': 'resource:org.jamon.Ganadero#' + this.propietario.value
     };
 
     this.myForm.setValue({
